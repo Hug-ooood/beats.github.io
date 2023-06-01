@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Página de Beats</title>
+  <style>
+    /* Estilos para la página */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #ffa6a6;
+      margin: 0;
+      padding: 20px;
+    }
+    
+    h1 {
+      text-align: center;
+      color: #ffffff;
+    }
+    
+    /* Estilos para el encabezado */
+    header {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+    
+    header img {
+      width: 420px;
+      height: 180px;
+      margin-right: 10px;
+    }
+    
+    /* Estilos para los beats */
+    .beat-container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 20px;
+      padding: 20px;
+    }
+    
+    .beat {
+      background-color: #ffffff;
+      padding: 20px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+      display: flex;
+    }
+    
+    .beat img {
+      width: 150px;
+      height: 150px;
+      border-radius: 10px;
+      margin-right: 20px;
+    }
+    
+    .beat-content {
+      flex-grow: 1;
+    }
+    
+    .beat h2 {
+      color: #333333;
+      margin-top: 0;
+    }
+    
+    .beat p {
+      color: #666666;
+    }
+    
+    /* Estilos para el reproductor */
+    .audio-player {
+      display: flex;
+      align-items: center;
+      margin-top: 10px;
+    }
+    
+    .audio-player audio {
+      margin-right: 10px;
+    }
+  </style>
+
+</head>
+<body>
+  <header>
+    <img src="logo.png  " alt="Logo">
+  </header>
+  
+  <div class="beat-container">
+    <div class="beat">
+      <img src="BEAT1.png" alt="Foto del Beat 1">
+      <div class="beat-content">
+        <h2>Malibú</h2>
+        <p>98 BPM - </p>
+        <div class="audio-player">
+          <audio src="BEAT1.mp3" controls></audio>
+        </div>
+      </div>
+    </div>
+  
+    <div class="beat">
+      <img src="ruta_de_la_foto_2.jpg" alt="Foto del Beat 2">
+      <div class="beat-content">
+        <h2>Título del Beat 2</h2>
+        <p>Descripción del Beat 2.</p>
+        <div class="audio-player">
+          <audio src="ruta_del_beat_2.mp3" controls></audio>
+        </div>
+      </div>
+    </div>
+  
+    <div class="beat">
+      <img src="ruta_de_la_foto_3.jpg" alt="Foto del Beat 3">
+      <div class="beat-content">
+        <h2>Título del Beat 3</h2>
+        <p>Descripción del Beat 3.</p>
+        <div class="audio-player">
+          <audio src="ruta_del_beat_3.mp3" controls></audio>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
