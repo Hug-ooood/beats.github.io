@@ -16,18 +16,19 @@
       color: #ffffff;
     }
     
-    /* Estilos para el encabezado */
-    header {
+    /* Estilos para la barra de menús */
+    .menu {
       display: flex;
-      justify-content: center;
+      justify-content: space-between;
       align-items: center;
       margin-bottom: 20px;
     }
     
-    header img {
-      max-width: 100%;
-      height: auto;
-      margin-right: 10px;
+    .menu-item {
+      padding: 10px;
+      background-color: #ffffff;
+      color: #333333;
+      border-radius: 5px;
     }
     
     /* Estilos para los beats */
@@ -109,6 +110,18 @@
         background-position-x: 100%;
       }
     }
+    
+    /* Estilos responsivos */
+    @media (max-width: 768px) {
+      .menu {
+        flex-direction: column;
+        align-items: stretch;
+      }
+      
+      .menu-item {
+        margin-bottom: 10px;
+      }
+    }
   </style>
 
 </head>
@@ -117,9 +130,11 @@
     <div class="wave"></div>
   </div>
 
-  <header>
-    <img src="logo.png" alt="Logo">
-  </header>
+  <div class="menu">
+    <div class="menu-item">Menu 1</div>
+    <div class="menu-item">Menu 2</div>
+    <div class="menu-item">Menu 3</div>
+  </div>
   
   <div class="beat-container">
     <div class="beat">
